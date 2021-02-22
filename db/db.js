@@ -5,5 +5,3 @@ require("mongoose")
     useCreateIndex: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("db connected..."))
-  .catch((err) => console.err(err));
