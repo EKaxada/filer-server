@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "webpack --mode=production --config webpack.config.server.production.js"
+    "build": "node index.js"
   },
   "dependencies": {
     "@babel/core": "^7.12.17",
