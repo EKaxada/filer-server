@@ -1,6 +1,4 @@
-//connect to database
-const db = "mongodb://localhost:27017/myCloud";
-//   "mongodb+srv://ekaxada:1234567890@cluster0.dgpl9.mongodb.net/ekaxada?retryWrites=true&w=majority";
+const db = process.env.MONGO_URI || "mongodb://localhost:27017/myCloud";
 require("mongoose")
   .connect(db, {
     useNewUrlParser: true,
