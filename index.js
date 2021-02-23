@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
 
 app.use(fileRoute);
 
-const db = process.env.MONGO_URI;
+const db = mongodb+srv://ekaxada:9h9qtHj8AeahCac@cluster0.etx8o.mongodb.net/ekaxada?retryWrites=true&w=majority;
 require("mongoose")
   .connect(db, {
     useNewUrlParser: true,
