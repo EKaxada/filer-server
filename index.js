@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const fileRoute = require("./routes/file.routes");
-const url = "ekaxada/github.io";
+const url = "https://filer.netlify.app";
 
 const app = express();
 
