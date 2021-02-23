@@ -11,6 +11,7 @@
     "@babel/core": "^7.12.17",
     "babel-loader": "^8.2.2",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.16",
     "multer": "^1.4.2"
