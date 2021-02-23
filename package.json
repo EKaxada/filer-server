@@ -5,8 +5,7 @@
   "author": "EKaxada <enocksdha@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js",
-    "build": "node index.js"
+    "start": "nodemon --trace-deprecation index.js"
   },
   "dependencies": {
     "@babel/core": "^7.12.17",
@@ -17,9 +16,6 @@
     "multer": "^1.4.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7",
-    "webpack": "^5.23.0",
-    "webpack-cli": "^4.5.0",
-    "webpack-node-externals": "^2.5.2"
+    "nodemon": "^2.0.7"
   }
 }
