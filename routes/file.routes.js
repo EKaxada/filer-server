@@ -3,11 +3,20 @@ const express = require("express");
 const multer = require("multer");
 const File = require("../model/file.model");
 const Router = express.Router();
+const GridFsStorage = require("multer-gridfs-storage")
+
+const storage = new GridFsStorage({
+  url: "mongodb+srv://ekaxada:9h9qtHj8AeahCac@cluster0.etx8o.mongodb.net/ekaxada?retryWrites=true&w=majority",
+  options: { useNewUrlParser: true, useUnifiedTopology: true },
+  file: (req, res) => {
+    
+  }
+})
 
 const upload = multer({
   storage: multer.diskStorage({
     destination(req, file, cb) {
-      cb(null, "./files");
+      cb(null, "https://drive.google.com/drive/folders/1gOGLiOdfGJUtmh478-fs0yD0Tllo8Gnx?usp=sharing");
     },
     filename(req, file, cb) {
       cb(null, `${new Date().getTime()}_${file.originalname}`);
